@@ -10,10 +10,10 @@ body
 {
 	background: url("http://10.90.90.55/Tasks/html_challenge1/assets/images/bg.jpg");
 }
-li:hover
+.nav li a:hover
 {
-	background-color:lightgrey;
-	color: #e7621f;
+	background-color:lightgrey!important;
+	color: #e7621f!important;
 }
 input:hover
 {
@@ -55,12 +55,6 @@ h3
  height: 370px;
  z-index: 1;	
  }
- .nav li
- {
- 	width: 158px;
-	text-align: center;
-	font-weight: bold;
- }
  .row
  {
  	margin-top: 20px;
@@ -84,6 +78,7 @@ h3
 	margin-right: 30px;
 	font-weight: bold;
 	background-color: #e1dfde;
+	margin-left: 50px;
  }
  .radius:hover
  {
@@ -107,4 +102,111 @@ h3
   .well-lg
   {
   	background-color:#d8d6d6;
+  }
+  .navbar-nav
+  {
+  	float:none;
+  }
+  .nav li
+  {
+  	display: inline-block;
+  	min-width: 150px;
+  	text-align: center;
+  	font-weight: bold;	
+  }
+  .dotted ul li
+  {
+  	display: inline-block;
+  	font-weight: bold;
+  	font-size: 35px;
+  }
+  .dotted ul .right
+  {
+  	float: right;
+  	color: #e7621f;
+  	font-size: 42px;
+  }
+  .dotted ul .dot
+  {
+  	border-bottom:dotted;
+  }
+  @media (max-width: 320px) 
+  {
+  	#pic
+  	{
+  		width:100%;
+ 		height:100%;
+ 		margin-left: 3px!important;
+  	}
+  	.middle
+  	{
+  		text-align: center;
+  	}
+  	.well .btn
+  	{
+  		margin-left:40px!important;	
+  	}
+  }
+  @media (max-width: 360px) 
+  {
+  	#pic
+  	{
+  		width:100%;
+ 		height:100%;
+ 		margin-left:3px!important;
+  	}
+  	.middle
+  	{
+  		text-align: center;
+  	}
+  	.well .btn
+  	{
+  		margin-left: 160px!important;	
+  	}
+  	
+  }
+  @media (max-width: 768px) 
+  {
+  	.middle
+  	{
+  		text-align: center;
+  	}
+  	#pic
+  	{
+  		margin-left: 100px;
+  	}
+  	.radius
+  	{
+  		margin-left: 90px;
+  	}
+  }
+  @media (max-width: 800px) 
+  {
+  	#pic
+  	{
+  		margin-left: 100px;
+  	}
+  	.radius
+  	{
+  		margin-left: 90px;
+  	}
+  	.middle
+  	{
+  		text-align: center;
+  	}
+  }
+  @media (max-width: 980px) 
+  {
+  	#pic
+  	{
+  		margin-left: 100px;
+  	}
+  	.radius
+  	{
+  		margin-left: 90px;
+  	}
+  	.middle
+  	{
+  		text-align: center;
+  	}
   }
