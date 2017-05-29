@@ -1,3 +1,14 @@
+@font-face 
+{
+    font-family: "myFont";
+    src: url('../fonts/MarketingScript.ttf') format('truetype');
+}
+@font-face 
+{
+    font-family: "myFont1";
+    src: url('../fonts/HIGHERUP.TTF') format('truetype');
+}
+
 .col-lg-6 img
 {
 	border: 0.8em solid #f4f4f4;
@@ -38,6 +49,7 @@ h3
 {
 	border-bottom:solid 1px;
 	font-weight: bold;
+	font-family: "myFont";
 }
  .col-lg-5 .panel-body:hover
  {
@@ -69,6 +81,7 @@ h3
  	margin-left: 200px;
  	font-weight: bold;
  	background-color:#bcbab9;
+ 	font-family: "myFont1";
  }
  .radius
  {
@@ -79,6 +92,7 @@ h3
 	font-weight: bold;
 	background-color: #e1dfde;
 	margin-left: 50px;
+	font-family: "myFont1";
  }
  .radius:hover
  {
@@ -118,7 +132,8 @@ h3
   {
   	display: inline-block;
   	font-weight: bold;
-  	font-size: 35px;
+  	font-size: 40px;
+  	font-family: "myFont1";
   }
   .dotted ul .right
   {
@@ -130,83 +145,44 @@ h3
   {
   	border-bottom:dotted;
   }
-  @media (max-width: 320px) 
-  {
-  	#pic
-  	{
-  		width:100%;
- 		height:100%;
- 		margin-left: 3px!important;
-  	}
-  	.middle
-  	{
-  		text-align: center;
-  	}
-  	.well .btn
-  	{
-  		margin-left:40px!important;	
-  	}
-  }
   @media (max-width: 360px) 
   {
-  	#pic
+  	.col-xs-12 #pic
   	{
-  		width:100%;
- 		height:100%;
- 		margin-left:3px!important;
+  		width: 100%;
+  		height: 100%;
   	}
-  	.middle
+  	.col-xs-12 .dotted li
   	{
-  		text-align: center;
+  		font-size: 15px;
   	}
-  	.well .btn
+  	.col-xs-12 h3 , p , article , #labels , #btn1
   	{
-  		margin-left: 160px!important;	
+  		font-size: 13px;
   	}
-  	
   }
-  @media (max-width: 768px) 
+  @media (min-width: 768px) 
   {
-  	.middle
+  	.middle .col-xs-12
   	{
-  		text-align: center;
+  		display: inline!important;
+    	width: 33%;
+    	height: 33%;
   	}
   	#pic
   	{
   		margin-left: 100px;
-  	}
-  	.radius
-  	{
-  		margin-left: 90px;
-  	}
+  	} 	
   }
-  @media (max-width: 800px) 
+  @media (max-width: 320px) 
   {
-  	#pic
+  	.col-sm-12 .latest
+  	{
+  		height: 410px;
+  	}
+  	.col-sm-12 .btn2 #btn1
   	{
   		margin-left: 100px;
   	}
-  	.radius
-  	{
-  		margin-left: 90px;
-  	}
-  	.middle
-  	{
-  		text-align: center;
-  	}
   }
-  @media (max-width: 980px) 
-  {
-  	#pic
-  	{
-  		margin-left: 100px;
-  	}
-  	.radius
-  	{
-  		margin-left: 90px;
-  	}
-  	.middle
-  	{
-  		text-align: center;
-  	}
-  }
+  
